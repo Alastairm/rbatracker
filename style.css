@@ -1,0 +1,7 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  display:inline-block;
+  overflow: auto;
+  width: 100%;
+}
