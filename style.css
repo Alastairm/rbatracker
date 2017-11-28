@@ -5,3 +5,11 @@ body {
   overflow: auto;
   width: 100%;
 }
+
+ins {
+	background-color: lightgreen;
+	text-decoration: none;
+}
+del {
+	background-color: salmon
+}

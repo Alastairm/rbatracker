@@ -46,3 +46,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+ins {
+	background-color: lightgreen;
+	text-decoration: none;
+}
+del {
+	background-color: salmon
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
