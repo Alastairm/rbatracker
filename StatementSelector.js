@@ -27,15 +27,17 @@ export default class StatementSelector extends React.Component {
   render () {
     return (
         <select ref='selector1' onChange={this.onChange} value={this.state.value}>
-          <optgroup label="2016">
-            <Statement name="201609"/>
-            <Statement name="201608"/>
-            <Statement name="201607"/>
-            <Statement name="201606"/>
-            <Statement name="201605"/>
-            <Statement name="201604"/>
-            <Statement name="201603"/>
-            <Statement name="201602"/>
+          <optgroup label="2017">
+            <Statement name="201711"/>
+            <Statement name="201710"/>
+            <Statement name="201709"/>
+            <Statement name="201708"/>
+            <Statement name="201707"/>
+            <Statement name="201706"/>
+            <Statement name="201705"/>
+            <Statement name="201704"/>
+            <Statement name="201703"/>
+            <Statement name="201702"/>
           </optgroup>
         </select>
     );

@@ -29,7 +29,23 @@ function replaceAll(str, find, replace) {
 export default class StatementDiff extends React.Component {
  render() {
     var diff = new Diff();
-    var a = diff.linesToChars_(this.props.statementA, this.props.statementB);
+
+    // Do some preprocessing of statements
+    var textA = this.props.statementA;
+    var textB = this.props.statementB;
+    textA = replaceAll(textA, '\t', '');
+    textA = replaceAll(textA, '\n', ' ');
+    textA = replaceAll(textA, '>', '> ');
+    textA = replaceAll(textA, '<', ' <');
+    textA = replaceAll(textA, '&nbsp;', ' ');
+    textB = replaceAll(textB, '\t', '')
+    textB = replaceAll(textB, '\n', ' ')
+    textB = replaceAll(textB, '>', '> ')
+    textB = replaceAll(textB, '<', ' <')
+    textB = replaceAll(textB, '&nbsp;', ' ')
+    console.log(textA)
+    console.log(textB)
+    var a = diff.linesToChars_(textA, textB);
     var diffs = diff.main(a.chars1, a.chars2);
     diff.cleanupSemantic(diffs);
     console.log('diffs')

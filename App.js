@@ -7,8 +7,8 @@ export default class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      default1: 'statements/2016/08',
-      default2: 'statements/2016/09',
+      default1: 'statements/2017/10',
+      default2: 'statements/2017/11',
       statementA: '',
       statementB: '',
     };

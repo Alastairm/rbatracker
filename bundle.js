@@ -21974,8 +21974,8 @@
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
 	    _this.state = {
-	      default1: 'statements/2016/08',
-	      default2: 'statements/2016/09',
+	      default1: 'statements/2017/10',
+	      default2: 'statements/2017/11',
 	      statementA: '',
 	      statementB: ''
 	    };
@@ -22104,7 +22104,23 @@
 	    key: 'render',
 	    value: function render() {
 	      var diff = new _textDiff2.default();
-	      var a = diff.linesToChars_(this.props.statementA, this.props.statementB);
+
+	      // Do some preprocessing of statements
+	      var textA = this.props.statementA;
+	      var textB = this.props.statementB;
+	      textA = replaceAll(textA, '\t', '');
+	      textA = replaceAll(textA, '\n', ' ');
+	      textA = replaceAll(textA, '>', '> ');
+	      textA = replaceAll(textA, '<', ' <');
+	      textA = replaceAll(textA, '&nbsp;', ' ');
+	      textB = replaceAll(textB, '\t', '');
+	      textB = replaceAll(textB, '\n', ' ');
+	      textB = replaceAll(textB, '>', '> ');
+	      textB = replaceAll(textB, '<', ' <');
+	      textB = replaceAll(textB, '&nbsp;', ' ');
+	      console.log(textA);
+	      console.log(textB);
+	      var a = diff.linesToChars_(textA, textB);
 	      var diffs = diff.main(a.chars1, a.chars2);
 	      diff.cleanupSemantic(diffs);
 	      console.log('diffs');
@@ -23544,15 +23560,17 @@
 	        { ref: 'selector1', onChange: this.onChange, value: this.state.value },
 	        _react2.default.createElement(
 	          'optgroup',
-	          { label: '2016' },
-	          _react2.default.createElement(_Statement2.default, { name: '201609' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201608' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201607' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201606' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201605' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201604' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201603' }),
-	          _react2.default.createElement(_Statement2.default, { name: '201602' })
+	          { label: '2017' },
+	          _react2.default.createElement(_Statement2.default, { name: '201711' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201710' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201709' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201708' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201707' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201706' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201705' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201704' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201703' }),
+	          _react2.default.createElement(_Statement2.default, { name: '201702' })
 	        )
 	      );
 	    }
