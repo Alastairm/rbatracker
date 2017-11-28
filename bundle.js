@@ -22110,20 +22110,20 @@
 	      console.log('diffs');
 	      diff.charsToLines_(diffs, a.lineArray);
 
-	      // diffs = diffs.map(function (diff) {
-	      //   return [diff[0], replaceAll(diff[1], `\n\t`, ` `)]
-	      // })
-	      //
-	      // var i = 0;
-	      // var length = diffs.length;
-	      // while (i < length - 2){
-	      //   if (diffs[i][1] == diffs[i+1][1]){
-	      //     diffs[i][0] = 0;
-	      //     diffs.splice(i+1,1);
-	      //     length--;
-	      //   }
-	      //   i++
-	      // }
+	      diffs = diffs.map(function (diff) {
+	        return [diff[0], replaceAll(diff[1], '\n\t', ' ')];
+	      });
+
+	      var i = 0;
+	      var length = diffs.length;
+	      while (i < length - 2) {
+	        if (diffs[i][1] == diffs[i + 1][1]) {
+	          diffs[i][0] = 0;
+	          diffs.splice(i + 1, 1);
+	          length--;
+	        }
+	        i++;
+	      }
 	      console.log(diffs);
 	      console.log(JSON.stringify(diffs));
 
