@@ -1,4 +1,6 @@
 # RBA Tracker
-Compare RBA monetary policy decision announcements.
+Track changes in RBA monetary policy decision announcements.
 
-[View Here](https://alastairm.github.io/rbatracker/)
+[RBA Tracker page](https://alastairm.github.io/rbatracker/)
+
+inspired by The Wall Street Journal's [Fed Statement Tracker](https://projects.wsj.com/fed-statement-tracker-embed/) 
