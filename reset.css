@@ -10,6 +10,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	color: #333;
+	background-color: #eee;
 	line-height: 1.2;
 }
 ol, ul {
@@ -28,13 +30,26 @@ table {
 	border-spacing: 0;
 }
 ins {
-	background-color: lightgreen;
+	background-color: #aaffaa;
 	text-decoration: none;
 }
 del {
-	background-color: salmon;
+	background-color: #ffaaaa;
 	text-decoration: none;
 }
 p {
     display: block;
+}
+.diff-result {
+	background-color: #fff;
+	padding: 10px;
+}
+
+.octicon {
+	display: block;
+	margin: auto;
+}
+
+select:not([size]):not([multiple]) {
+  height: calc(1.2rem);
 }

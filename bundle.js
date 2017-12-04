@@ -22003,16 +22003,29 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Compare:',
-	          _react2.default.createElement(_StatementSelector2.default, {
-	            onChange: this.input1Handler1,
-	            'default': this.state.default1
-	          }),
-	          'to:',
-	          _react2.default.createElement(_StatementSelector2.default, {
-	            onChange: this.input1Handler2,
-	            'default': this.state.default2
-	          })
+	          _react2.default.createElement(
+	            'del',
+	            null,
+	            '\u2003\u2003',
+	            _react2.default.createElement(_StatementSelector2.default, {
+	              onChange: this.input1Handler1,
+	              'default': this.state.default1,
+	              style: 'del'
+	            }),
+	            '\u2003\u2003'
+	          ),
+	          '\u2003\u2192\u2003',
+	          _react2.default.createElement(
+	            'ins',
+	            null,
+	            '\u2003\u2003',
+	            _react2.default.createElement(_StatementSelector2.default, {
+	              onChange: this.input1Handler2,
+	              'default': this.state.default2,
+	              style: 'del'
+	            }),
+	            '\u2003\u2003'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'h1',

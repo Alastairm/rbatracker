@@ -27,18 +27,25 @@ export default class App extends React.Component {
   render(){
     return (
       <div style={style}>
+
         <p>
-          Compare:
+          <del>&emsp;&emsp;
           <StatementSelector
             onChange={this.input1Handler1}
             default={this.state.default1}
-          />
-            to:  
+            style="del"
+          />&emsp;&emsp;
+        </del>
+        &emsp;→&emsp;
+        <ins>&emsp;&emsp;
           <StatementSelector
             onChange={this.input1Handler2}
             default={this.state.default2}
-          />
+            style="del"
+          />&emsp;&emsp;
+        </ins>
         </p>
+
         <h1>Statement by Philip Lowe, Governor: Monetary Policy Decision</h1>
         <StatementDiff
           statementA={this.state.statementA}
