@@ -21921,7 +21921,7 @@
 	      return _react2.default.createElement(
 	        'h1',
 	        null,
-	        'Test '
+	        'RBA Interest Rate Decision Comparison'
 	      );
 	    }
 	  }]);
@@ -22017,7 +22017,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Statement'
+	          'Statement by Philip Lowe, Governor: Monetary Policy Decision'
 	        ),
 	        _react2.default.createElement(_diff2.default, {
 	          statementA: this.state.statementA,

@@ -33,13 +33,13 @@ export default class App extends React.Component {
             onChange={this.input1Handler1}
             default={this.state.default1}
           />
-          to:
+            to:  
           <StatementSelector
             onChange={this.input1Handler2}
             default={this.state.default2}
           />
         </p>
-        <h1>Statement</h1>
+        <h1>Statement by Philip Lowe, Governor: Monetary Policy Decision</h1>
         <StatementDiff
           statementA={this.state.statementA}
           statementB={this.state.statementB}
