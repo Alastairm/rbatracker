@@ -5,26 +5,4 @@ body {
   font-size:18px;
   color:#444;
   padding:0 10px;
-
-}
-{
-ins {
-	background-color: lightgreen;
-	text-decoration: none;
-}
-del {
-	background-color: salmon;
-}
-
-del br {
-    display: none;
-}
-.diff-result {margin: 0 auto;}
-div .data-reactroot {
-  margin:40px auto;
-  max-width:650px;
-  line-height:1.6;
-  font-size:18px;
-  color:#444;
-  padding:0 10px;
 }

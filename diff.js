@@ -3,9 +3,9 @@ import Diff from './text-diff.js';
 
 
 const style = {
-  span: `backgroundColor: 'white',`,
+  span: `backgroundColor: white,`,
   ins: `backgroundColor: lightgreen; textDecoration: none;`,
-  del: `backgroundColor: 'salmon';`,
+  del: `backgroundColor: salmon; textDecoration: none;`,
   div: {},
 }
 

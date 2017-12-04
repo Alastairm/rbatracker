@@ -10,7 +10,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -32,12 +32,9 @@ ins {
 	text-decoration: none;
 }
 del {
-	background-color: salmon
+	background-color: salmon;
+	text-decoration: none;
 }
 p {
     display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
 }
