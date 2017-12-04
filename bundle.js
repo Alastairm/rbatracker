@@ -22113,17 +22113,24 @@
 	      textA = replaceAll(textA, '>', '> ');
 	      textA = replaceAll(textA, '<', ' <');
 	      textA = replaceAll(textA, '&nbsp;', ' ');
+	      textA = replaceAll(textA, '<p>', ' <br>');
+	      textA = replaceAll(textA, '</p>', ' <br>');
 	      textB = replaceAll(textB, '\t', '');
 	      textB = replaceAll(textB, '\n', ' ');
 	      textB = replaceAll(textB, '>', '> ');
 	      textB = replaceAll(textB, '<', ' <');
 	      textB = replaceAll(textB, '&nbsp;', ' ');
+	      textB = replaceAll(textB, '<p>', ' <br>');
+	      textB = replaceAll(textB, '</p>', ' <br>');
 	      console.log(textA);
 	      console.log(textB);
+	      // Normal diff
+	      // var diffs = diff.main(textA, textB);
+
+	      // Each word diff
 	      var a = diff.linesToChars_(textA, textB);
 	      var diffs = diff.main(a.chars1, a.chars2);
 	      diff.cleanupSemantic(diffs);
-	      console.log('diffs');
 	      diff.charsToLines_(diffs, a.lineArray);
 
 	      diffs = diffs.map(function (diff) {
