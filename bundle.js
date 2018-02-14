@@ -21943,11 +21943,6 @@
 	        'div',
 	        { style: style },
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'RBA Interest Rate Decision Tracker'
-	        ),
-	        _react2.default.createElement(
 	          'p',
 	          null,
 	          _react2.default.createElement(

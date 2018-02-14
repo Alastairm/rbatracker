@@ -27,7 +27,7 @@ export default class App extends React.Component {
   render(){
     return (
       <div style={style}>
-        <h1>RBA Interest Rate Decision Tracker</h1>
+        
         <p>
           <del>&emsp;&emsp;
           <StatementSelector
