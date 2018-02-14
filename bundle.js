@@ -54,17 +54,12 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _hello = __webpack_require__(184);
-
-	var _hello2 = _interopRequireDefault(_hello);
-
-	var _App = __webpack_require__(185);
+	var _App = __webpack_require__(184);
 
 	var _App2 = _interopRequireDefault(_App);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_hello2.default, null), document.getElementById('hello'));
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
 
 /***/ }),
@@ -21894,64 +21889,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(37);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Hello = function (_React$Component) {
-	  _inherits(Hello, _React$Component);
-
-	  function Hello() {
-	    _classCallCheck(this, Hello);
-
-	    return _possibleConstructorReturn(this, (Hello.__proto__ || Object.getPrototypeOf(Hello)).apply(this, arguments));
-	  }
-
-	  _createClass(Hello, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h1',
-	        null,
-	        'RBA Interest Rate Decision Tracker'
-	      );
-	    }
-	  }]);
-
-	  return Hello;
-	}(_react2.default.Component);
-
-	exports.default = Hello;
-
-/***/ }),
-/* 185 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _diff = __webpack_require__(186);
+	var _diff = __webpack_require__(185);
 
 	var _diff2 = _interopRequireDefault(_diff);
 
-	var _StatementSelector = __webpack_require__(188);
+	var _StatementSelector = __webpack_require__(187);
 
 	var _StatementSelector2 = _interopRequireDefault(_StatementSelector);
 
@@ -22000,6 +21942,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { style: style },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'RBA Interest Rate Decision Tracker'
+	        ),
 	        _react2.default.createElement(
 	          'p',
 	          null,
@@ -22055,7 +22002,7 @@
 	};
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22070,7 +22017,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _textDiff = __webpack_require__(187);
+	var _textDiff = __webpack_require__(186);
 
 	var _textDiff2 = _interopRequireDefault(_textDiff);
 
@@ -22189,7 +22136,7 @@
 	;
 
 /***/ }),
-/* 187 */
+/* 186 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23513,7 +23460,7 @@
 	module.exports = diff;
 
 /***/ }),
-/* 188 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23528,7 +23475,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Statement = __webpack_require__(189);
+	var _Statement = __webpack_require__(188);
 
 	var _Statement2 = _interopRequireDefault(_Statement);
 
@@ -23611,7 +23558,7 @@
 	}
 
 /***/ }),
-/* 189 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
