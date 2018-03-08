@@ -6,3 +6,9 @@ body {
   color:#444;
   padding:0 10px;
 }
+
+footer {
+  text-align: center;
+  font-size:10px;
+  color:#000;
+}
