@@ -28,6 +28,7 @@ export default class StatementSelector extends React.Component {
     return (
         <select ref='selector1' onChange={this.onChange} value={this.state.value}>
           <optgroup label="2017">
+            <Statement name="201712"/>
             <Statement name="201711"/>
             <Statement name="201710"/>
             <Statement name="201709"/>
